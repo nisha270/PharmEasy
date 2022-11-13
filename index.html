@@ -1,73 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PharmEasy || Home</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
     <nav>
-        <div id="navbar">
-           <div id="logo">
-              <img src="./images/PharmEasy (1).png" alt="logo">
-           </div>
-           <div id="items">
-              <div><a href="./medicine.html">Medicine</a></div>
-              <div><a href="./healthcare.html">Healthcare</a></div>
-              <div><a href="./healthblog.html">Health Blog</a></div>              
-           </div>
-           <div id="login">
-              <h3><button id="btn">Login</button></h3>
-           </div>
+      <div id="navbar">
+        <div id="logo">
+          <img
+            src="./PharmEasy__1_-removebg-preview (1).png"
+            alt="logo"
+          />
         </div>
+        <div id="items">
+          <div><a href="./medicine.html">Medicine</a></div>
+          <div><a href="#">Healthcare</a></div>
+          <div><a href="#">Health Blog</a></div>
+        </div>
+        <div id="login">
+          <button id="myBtn">Login</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h1>PharmEasy</h1>
+                <p>take it easy</p>
+              </div>
+              <div class="modal-body">
+                <h1>Quick Login / Register</h1>
+                <input id="nums" type="number" placeholder="Enter your phone number"><br>
+                <button id="continue">Get OTP</button><br>
+                <input type="number" id="otp"placeholder="Enter your OTP"><br>
+
+                <button id="submit">Submit</button><br><br><br>
+                <p>By clicking continue, you agree with our Privacy Policy</p>
+              </div>
+              <div class="modal-footer">
+                <h3 id="log"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
-    <section id="container">  
-        <div id="searchpara">
-            <h1>what are you looking for?</h1>
-            <div id="search">
-                <input type="text" placeholder="search for medicne">
-                <button>Search</button>
-            </div>
-
+    <section id="container">
+      <div id="searchpara">
+        <h1>what are you looking for?</h1>
+        <div id="search">
+          <input type="text" placeholder="Search for medicne" />
+          <button>Search</button>
         </div>
-        <div id="para2">
-            <div>
-                <a href="#"><img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="medicine" height="150px"></a>
-            <p>Medicine</p>
-            </div>
-            
-            <div>
-                <a href="#"><img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="health care"height="150px"></a>
-            <p>Healthcare</p>
-            </div>
-
-           <div>
-            <a href="#"><img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="healthcare" height="150px"></a> <p>Health Blog</p>
-           </div>
-        </div>
-        <div id="para3">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/d71f51787ce-1_Thyroid-Profile_HP_634x274_v1.jpg" alt="">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/782553ad506-STAR25.jpg" alt="">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/c0034c14fe6-634X274.jpg" alt="">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/b3a4bdb683b-1.jpg" alt="">
-        </div>
-        <div id="offers">
-            <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/c287851239f-25_off.jpg?dim=1440x0" alt="offers" height="50px">
-                <p>Flat 25% off on first 3 medicine orders.</p>
-            </div>
-            <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/b1cafb3a0cf-flat_27_off.jpg?dim=1440x0" alt="offers" height="50px">
-                <p>Flat 27% off on first 3 medicine orders.</p>
-            </div>
-            <div>
-                <p>Log in to view more offers</p>
-            </div>
+      </div>
+      <div id="para2">
+        <div>
+          <a href="./medicine.html"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0"
+              alt="medicine"
+              height="150px"
+          /></a>
+          <p>Medicine</p>
         </div>
 
+        <div>
+          <a href="#"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0"
+              alt="health care"
+              height="150px"
+          /></a>
+          <p>Healthcare</p>
+        </div>
+
+        <div>
+          <a href="#"
+            ><img
+              src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0"
+              alt="healthcare"
+              height="150px"
+          /></a>
+          <p>Health Blog</p>
+        </div>
+      </div>
+      <!-- <div id="para3">
+        <img
+          src="https://cdn01.pharmeasy.in/dam/banner/banner/d71f51787ce-1_Thyroid-Profile_HP_634x274_v1.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn01.pharmeasy.in/dam/banner/banner/782553ad506-STAR25.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn01.pharmeasy.in/dam/banner/banner/c0034c14fe6-634X274.jpg"
+          alt=""
+        />
+        <img
+          src="https://cdn01.pharmeasy.in/dam/banner/banner/b3a4bdb683b-1.jpg"
+          alt=""
+        />
+      </div> -->
+      <div id="offers">
+        <div>
+          <img
+            src="https://cms-contents.pharmeasy.in/offer/c287851239f-25_off.jpg?dim=1440x0"
+            alt="offers"
+            height="70px"
+          />
+          <p>Flat 25% off on first 3 medicine orders.</p>
+        </div>
+        <div>
+          <img
+            src="https://cms-contents.pharmeasy.in/offer/b1cafb3a0cf-flat_27_off.jpg?dim=1440x0"
+            alt="offers"
+            height="70px"
+          />
+          <p>Flat 27% off on first 3 medicine orders.</p>
+        </div>
+        <div>
+          <i class="fa fa-lock"></i>
+          <p>Log in to view more offers.</p>
+        </div>
+      </div>
+      <div id="order">
+        <div id="ord">
+          <div id="ordp">
+            <img
+              src="https://assets.pharmeasy.in/apothecary/images/rx_upload.svg?dim=1440x0"
+              alt="page"
+            />
+          </div>
+          <div>
+            <h1>Order with Prescription</h1>
+            <p>Upload prescription and we will deliver your medicines</p>
+            <input
+              type="file"
+              id="myFile"
+              name="filename"
+              placeholder="Upload"
+            />
+          </div>
+          <div id="nums">
+            <h3>How does this work?</h3>
+            <div id="num1">
+              <div>
+                <p class="nu">1</p>
+                <p>Upload a photo of your prescription</p>
+              </div>
+              <div>
+                <p class="nu">2</p>
+                <p>Add delivery address and place the order</p>
+              </div>
+              <div>
+                <p class="nu">3</p>
+                <p>We will call you to confirm the medicines</p>
+              </div>
+              <div>
+                <p class="nu">4</p>
+                <p>
+                  Now, sit back! your medicines will get delivered at your
+                  doorstep
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
-</body>
+    <section id="choose">
+      <div>
+        <h1>Why Choose Us?</h1>
+        <div id="del">
+          <div>
+            <div>
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/family.svg?dim=96x0"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>32 Million+</h2>
+              <p>Registered users as of Mar 31, 2022</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/deliveryBoy.svg?dim=96x0"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>32 Million+</h2>
+              <p>Registered users as of Mar 31, 2022</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/pincodeServed.svg?dim=96x0"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>32 Million+</h2>
+              <p>Registered users as of Mar 31, 2022</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/locationMarker.svg?dim=96x0"
+                alt=""
+              />
+            </div>
+            <div>
+              <h2>32 Million+</h2>
+              <p>Registered users as of Mar 31, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec3">
+      <h1>What Our Customers have to Say</h1>
+      <div id="customer">
+        <div id="our">
+          <div>
+            <h3>Rajarshi Sarkar</h3>
+            <p>April 22, 2022</p>
+          </div>
+          <div>
+            " The app is really wonderful. Being a Product Manager myself, I
+            would say that the User experience (UI/UX) of the app is top notch
+            (easy to use, simple and convenient). Coming to services and
+            delivery, I would say Pharmeasy is doing a tremendous job even
+            during this unprecedented pandemic situation".
+          </div>
+        </div>
+        <div id="our">
+          <div>
+            <h3>Rajarshi Sarkar</h3>
+            <p>April 22, 2022</p>
+          </div>
+          <div>
+            "The app is really wonderful. Being a Product Manager myself, I
+            would say that the User experience (UI/UX) of the app is top notch
+            (easy to use, simple and convenient). Coming to services and
+            delivery, I would say Pharmeasy is doing a tremendous job even
+            during this unprecedented pandemic situation."
+          </div>
+        </div>
+        <div id="our">
+          <div>
+            <h3>Rajarshi Sarkar</h3>
+            <p>April 22, 2022</p>
+          </div>
+          <div>
+            The app is really wonderful. Being a Product Manager myself, I would
+            say that the User experience (UI/UX) of the app is top notch (easy
+            to use, simple and convenient). Coming to services and delivery, I
+            would say Pharmeasy is doing a tremendous job even during this
+            unprecedented pandemic situation.
+          </div>
+        </div>
+        <div id="our">
+          <div>
+            <h3>Rajarshi Sarkar</h3>
+            <p>April 22, 2022</p>
+          </div>
+          <div>
+            The app is really wonderful. Being a Product Manager myself, I would
+            say that the User experience (UI/UX) of the app is top notch (easy
+            to use, simple and convenient). Coming to services and delivery, I
+            would say Pharmeasy is doing a tremendous job even during this
+            unprecedented pandemic situation.
+          </div>
+        </div>
+        <div id="our">
+          <div>
+            <h3>Rajarshi Sarkar</h3>
+            <p>April 22, 2022</p>
+          </div>
+          <div>
+            The app is really wonderful. Being a Product Manager myself, I would
+            say that the User experience (UI/UX) of the app is top notch (easy
+            to use, simple and convenient). Coming to services and delivery, I
+            would say Pharmeasy is doing a tremendous job even during this
+            unprecedented pandemic situation.
+          </div>
+        </div>
+        <div id="our">
+          <div>
+            <h3>Rajarshi Sarkar</h3>
+            <p>April 22, 2022</p>
+          </div>
+          <div>
+            The app is really wonderful. Being a Product Manager myself, I would
+            say that the User experience (UI/UX) of the app is top notch (easy
+            to use, simple and convenient). Coming to services and delivery, I
+            would say Pharmeasy is doing a tremendous job even during this
+            unprecedented pandemic situation.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec4">
+      <div class="lastmain">
+        <div id="last">
+          <h1>Simplifying Healthcare Impacting Lives</h1>
+          <p>Download the App for Free</p>
+          <div id="last-img">
+            <a href="#"
+              ><img
+                src="https://assets.pharmeasy.in/apothecary/images/googlePlay.svg?dim=360x0"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                src="https://assets.pharmeasy.in/apothecary/images/appStore.svg?dim=256x0"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer">
+        <div id="tables">
+          <table>
+            <thead>
+              <th>Company</th>
+              <th>FeaturedCategories</th>
+              <th>Our Servicces</th>
+              <th>Policy Info</th>
+              <th>Follow On us</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>About Us</td>
+                <!-- company -->
+                <td>Covid Essentials</td>
+                <!-- FeaturedCategories -->
+                <td>Order Medicine</td>
+                <!-- Our Servicces-->
+                <td>Editorial Policy</td>
+                <td>
+                  <img
+                    src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=32x0"
+                    alt=""
+                  />
+                  <img
+                    src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=32x0"
+                    alt=""
+                  />
+                  <img
+                    src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=32x0"
+                    alt=""
+                  />
+                  <img
+                    src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=32x0"
+                    alt=""
+                  />
+                </td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td>Careers</td>
+                <!-- company -->
+                <td>Personal Care</td>
+                <!-- FeaturedCategories -->
+                <td>Healthcare Products</td>
+                <!-- Our Servicces-->
+                <td>Privacy Policy</td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td>Blogs</td>
+                <!-- company -->
+                <td>Health Food and Drinks</td>
+                <!-- FeaturedCategories -->
+                <td>Lab Tests</td>
+                <!-- Our Servicces-->
+                <td>Vulnerability Disclosure Policy</td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td>Sell at PharmEasy</td>
+                <!-- company -->
+                <td>Beauty</td>
+                <!-- FeaturedCategories -->
+                <td>Find Nearest Collection Centre</td>
+                <!-- Our Servicces-->
+                <td>Terms and Conditions</td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td>Partner with PharmEasy</td>
+                <!-- company -->
+                <td>Skin Care</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td>Customer Support Policy</td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td></td>
+                <!-- company -->
+                <td>Home Care</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td>Return Policy</td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td></td>
+                <!-- company -->
+                <td>Ayurvedic Care</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td></td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td></td>
+                <!-- company -->
+                <td>Mother and Baby Care</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td></td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td></td>
+                <!-- company -->
+                <td>Health Condition</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td></td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td></td>
+                <!-- company -->
+                <td>Diabetic Care</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td></td>
+                <!-- Policy Info-->
+              </tr>
+              <tr>
+                <td></td>
+                <!-- company -->
+                <td>Accessories And Wearables</td>
+                <!-- FeaturedCategories -->
+                <td></td>
+                <!-- Our Servicces-->
+                <td></td>
+                <!-- Policy Info-->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h2>Our Payment Partners</h2>
+          <div id="payments">
+            <div id="payment">
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/amazon.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/maestro.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/rupay.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/olamoney.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/visa.png?dim=1440x0"
+                alt="logo"
+              />
+              <img
+                src="https://assets.pharmeasy.in/apothecary/images/mastercard.png?dim=1440x0"
+                alt="logo"
+              />
+            </div>
+            <p>© 2022 PharmEasy. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
+<script src="./index.js"></script>

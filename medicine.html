@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmEasy || Medicine</title>
+    <link rel="stylesheet" href="./medicine.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- header page -->
+    <header>
+        <nav>
+            <div id="navbar">
+              <a href="./index.html"><div id="logo">
+                <img
+                  src="./PharmEasy__1_-removebg-preview (1).png"
+                  alt="logo"
+                />
+              </div></a>
+              <div id="items">
+                <div><a href="./medicine.html">Medicine</a></div>
+                <div><a href="./healthcare.html">Healthcare</a></div>
+                <div><a href="./healthblog.html">Health Blog</a></div>
+              </div>
+              <div id="login">
+                <button id="myBtn">Login</button>
+      
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">&times;</span>
+                      <h1>PharmEasy</h1>
+                      <p>take it easy</p>
+                    </div>
+                    <div class="modal-body">
+                      <h1>Quick Login / Register</h1>
+                      <input id="nums" type="number" placeholder="Enter your phone number"><br>
+                      <button id="continue">Get OTP</button><br>
+                      <input type="number" id="otp"placeholder="Enter your OTP"><br>
+      
+                      <button id="submit">Submit</button><br><br><br>
+                      <p>By clicking continue, you agree with our <a href="#">Privacy Policy</a></p>
+                    </div>
+                    <div class="modal-footer">
+                      <h3 id="log"></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- section page -->
+    <section class="main">
+        <div id="heading">
+            <div>
+                <h1>Health Food and Drinks</h1>
+            </div>
+            <div>
+            sort by: <select>
+                <option value="">Popularty</option>
+                <option value="LTH">Price Low to High</option>
+                <option value="HTL">Price High to Low</option>
+            </select>
+            </div>
+            
+        </div>
+        <div id="container">
+
+        </div>
+    </section>
+</body>
+</html>
+<script src="./index.js">
+
+</script>
+<script src="./medicine.js" >
+
+
+</script>
