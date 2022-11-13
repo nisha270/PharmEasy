@@ -3,11 +3,16 @@
     font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
-
+nav{
+    /* position: fixed; */
+    
+}
 #navbar{
+    
     display: flex;
     /* border: 1px solid; */
     text-align: center;
+    /* position: fixed; */
     margin: auto;
     /* border: 1px solid; */
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -59,6 +64,8 @@ a{
 
 #offers{
     /* border: 1px solid; */
+    padding-top: 50px;
+    padding-bottom: 40px;
    display: flex; 
    width: 90%;
 }
@@ -202,7 +209,7 @@ a{
 }
 
 #sec4{
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 10px;
     margin: 30px;
     /* width: 20%; */
@@ -220,28 +227,20 @@ a{
     font-size: 20px;
 }
 .lastmain{
-    border: 1px solid;
-    width: 100%;
+    /* border: 1px solid; */
+    width: 30%;
+    margin: auto;
+    /* align-items: center; */
+    margin-top: 60px;
 }
 #sec4{
-    /* height: 400px; */
+    margin-top: 30px;
+    margin-bottom: 70px;
+    height: 350px;
+   background-color:rgb(172, 252, 252);
     background-image: url(https://assets.pharmeasy.in/apothecary/images/downloadBanner.webp?dim=1440x0&q=100);
-
+    background-size: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 #footer{
@@ -283,6 +282,11 @@ text-align: right;
 
 
 /* login button */
+#myBtn{
+    background-color: white;
+    border: none;
+    font-size: 22px;
+}
 
 
 /* The Modal (background) */
@@ -342,11 +346,17 @@ text-align: right;
   }
   
   .modal-header {
-    padding: 2px 16px;
-    background-color: #c1f7fe;
+    padding: 2px 0px;
+    background-color: #1e8d9c;
     color: white;
   }
-  
+  .modal-header>p{
+    margin-top: -25px;
+    /* border: 1px solid; */
+  }
+  .modal-header>h1{
+    font-size: 30px;
+  }
   .modal-body {padding: 35px 16px;
       margin-left: 20px;
   }
@@ -355,20 +365,14 @@ text-align: right;
       padding: 5px;
       margin: 10px 0px 10px 10px;
   }
-  #submit{
-      background-color: rgb(11, 155, 155);
-      color: white;
-      text-align: center;
-      padding: 5px 15px 6px ;
-      border-radius:20px ;
-      padding-left: 10px 0px;
-      margin-top: 20px;
-      margin-left: 100px;
-  }
+  
   .modal-footer {
     padding: 5px 16px;
-    background-color: #c1f7fe;
+    background-color: #1e8d9c;
   }
   .modal-header>img{
       height: 80px;
   }
+  /* #footer{
+    width: 100%;
+  } */
