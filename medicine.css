@@ -22,8 +22,11 @@
     /* width: 70%; */
     /* border: 1px solid gold; */
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
+}
+#container>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #heading{
     display: flex;
@@ -51,3 +54,18 @@ img+p{
 }
 
 
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    #container{
+        display: grid;
+        /* border: 1px solid; */
+        grid-template-columns: repeat(2,1fr);
+       
+        gap: 35px;
+    
+    }
+}
+
+/* Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+
+}

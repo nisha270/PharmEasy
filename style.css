@@ -244,8 +244,9 @@ a{
 
 /* footer */
 #footer{
+    /* border: 1px solid; */
     padding: 40px;
-    width: 97%;
+    /* width: 97%; */
     margin: auto;
     background-color: rgb(234, 249, 253);
 }
@@ -376,3 +377,9 @@ text-align: right;
   /* #footer{
     width: 100%;
   } */
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+}
+
+/* Small Screen */
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+}
